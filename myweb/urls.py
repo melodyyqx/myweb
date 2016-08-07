@@ -18,6 +18,7 @@ from django.contrib import admin
 from blog.views import blog
 from blog.views import login
 from blog.views import login_action
+from blog.views import logout
 
 
 
@@ -28,4 +29,5 @@ urlpatterns = [
     url(r'^blog/', blog),
     url(r'^login/', login),
     url(r'^login_action/', login_action),
+    url(r'^logout/',logout),
 ]

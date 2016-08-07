@@ -5,10 +5,12 @@
 
 <head>
     <body>
-           <form action="/login_action" method="POST">
-                username: <input name="user" type="username"></br></br>
-                password: <input name="pwd" type="password"></br></br>
-                <button id="btn" type="submit">login</button>
-           <form>
+            <form action="/login_action/" method="post">
+           <input name="user" type="username" placeholder="username"><br><br>
+           <input name="pwd" type="password" placeholder="password"><br><br>
+           {{ error }}<br>
+           <button id="btn" type="submit" >login</button>
+       </form>
     <body>
 <html>
+          
